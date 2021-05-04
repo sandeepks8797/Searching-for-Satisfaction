@@ -1,0 +1,7 @@
+Please solve today and please update solution in Github Repository.
+ 
+Date: 4th May
+
+1. https://codeforces.com/problemset/problem/160/A
+
+2. Debug almostrectanglr.py file. 
