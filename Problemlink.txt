@@ -5,3 +5,7 @@ Date: 4th May
 1. https://codeforces.com/problemset/problem/160/A
 
 2. Debug almostrectanglr.py file. 
+
+Date: 5th May
+
+3. https://codeforces.com/problemset/problem/1481/B(Solved)
