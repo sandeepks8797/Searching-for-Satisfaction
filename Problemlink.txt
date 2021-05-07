@@ -9,3 +9,5 @@ Date: 4th May
 Date: 5th May
 
 3. https://codeforces.com/problemset/problem/1481/B(Solved)
+
+4. https://codeforces.com/contest/1520/problem/C
