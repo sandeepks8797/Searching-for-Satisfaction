@@ -5,7 +5,7 @@ t = int(input())
 for _ in range(t):
     n = int(input())
     mat = [[0]*n]*n
-    temp = 0
+    temp = 1
     
     for i in range(n):
         for j in range((i%2), n):
