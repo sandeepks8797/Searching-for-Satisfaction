@@ -1,5 +1,3 @@
-import numpy as np
-
 t = int(input())
 
 for _ in range(t):
@@ -7,6 +5,10 @@ for _ in range(t):
     mat = [[0 for i in range(n)] for j in range(n)]
     temp = 1
     
+    if n==2:
+        print(-1)
+        continue
+
     for i in range(n):
         for j in range((i%2), n, 2):
             mat[i][j] = temp
@@ -16,5 +18,9 @@ for _ in range(t):
         for y in range((x+1)%2 ,n, 2):
             mat[x][y] = temp
             temp += 1
-    print(mat)
+
+    for i in range(n):
+        for j in range(n):
+            print(mat[i][j],end=" ")
+        print()
 
