@@ -1,0 +1,40 @@
+def countPairs(self,a,b,M,N):
+        a.sort()
+        b.sort()
+        i=0
+        j=0
+        count=0
+        while a[i]==1:
+            i+=1
+        while b[j]==1:
+            j+=1
+        count+=(len(b)-j)*i
+        a3=0
+        t1=i
+        while a[t1]<4:
+            if a[t1]==3:
+                a3+=1
+            t1+=1
+            if t1==len(a):
+                return 0
+        b2,b3,b4=0,0,0
+        while b[j]<5:
+            if b[j]==2:
+                b2+=1
+            if b[j]==4:
+                b4+=1
+            j+=1
+            if j==len(b):
+                count+=(a3*(b2+b4))
+                return count
+        count+=(a3*(b2+b4))
+        while True:
+            while a[i]<b[j]:
+                count+=len(b)-j
+                i+=1
+                if i==len(a):
+                    return count
+            while b[j]<=a[i]:
+                j+=1
+                if j==len(b):
+                    return count
